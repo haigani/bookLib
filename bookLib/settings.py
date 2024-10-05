@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'bookLib.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'library_book',
+        'USER': 'postgres',
+        'PASSWORD': 'hH@13670602',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
